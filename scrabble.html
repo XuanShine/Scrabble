@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SCRABBLE !</title>
+    <link rel='stylesheet' href='style_scrabble.css' type='text/css' media='all' />
+</head>
+
+<body>
+    <center>
+        <h1>SCRABBLE !</h1>
+
+        <p>
+            Combien Joueurs? (2 jusqu'a 4):
+            <input id="nbJoueurs">
+        </p>
+        <p>
+            Choise un grille (entre 5 et 30, par default 15)
+            <input id="tailleGrille">
+        </p>
+        <br>
+        Veuillez charger un dictionnaire de mot ici.
+        <input type="file" id="files" name="files[]" multiple />
+        <br>
+        <div id="buttonandinfo">
+            <button class="button btn" type="button" onclick="javascript:creeParti()">Créer</button>
+            <!-- <button class="button btn" type="button" onclick="javascript:creeParti()">Valider</button> -->
+        </div>
+
+        <div id="buttonvalider"></div>
+        <div id="info"> </div>
+
+        <div id="tableau"></div>
+
+        <div id="joueurs"></div>
+    </center>
+
+    <script type="text/javascript" src="scrabble.js"></script>
+
+</body>
+
+</html>
